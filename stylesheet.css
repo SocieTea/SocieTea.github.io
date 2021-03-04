@@ -6,6 +6,7 @@ body {
   /* background-image: url("SocieTeaLogo.png");
   background-color: #cccccc; */
   height: 100%;
+  /* color: white; */
 }
 
 li {
@@ -69,7 +70,7 @@ li {
 
 .copy-container h2 {
   font-size: 25px;
-  color: cyan;
+  color: white;
 }
 
 .copy-container span {
@@ -187,6 +188,19 @@ li {
   max-height: 50% */
 }
 
+.calendar {
+  padding-top: 0px
+}
+
+.calendar iframe {
+}
+
+.google-form {
+  background: linear-gradient(125deg, #26d0c9 0%, #26d0a0 51%, #26d083 85%);
+  margin-top: 100px;
+  padding-top: 20px;
+}
+
 .contact-form {
   padding-top: 5px;
   clear: both;
@@ -239,6 +253,18 @@ input, textarea {
 .footer-logo {
   float: left;
   font-size: 32px;
+}
+
+.instagram {
+  padding: 15px;
+  font-size: 0px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.instagram img {
+  width: 100%;
 }
 
 .footer-list {
