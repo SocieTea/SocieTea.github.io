@@ -296,6 +296,11 @@ input, textarea {
   border-radius: 15px;
 }
 
+.people p {
+  font-size: 20px;
+  padding-bottom: 25px;
+}
+
 .name {
   padding: 10px 0px;
   border-bottom: 2px solid #dee7ec;
