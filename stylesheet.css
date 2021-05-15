@@ -7,9 +7,10 @@ body {
   background-color: #cccccc; */
   height: 100%;
   /* color: white; */
+  margin-top: -13px;
 }
 
-li {
+li:not(.sumlist) {
   list-style: none;
 }
 
@@ -92,6 +93,7 @@ li {
 
 .about p{
   font-size: 20px;
+  margin-top: -15px;
 }
 
 .section-title span1 {
@@ -197,8 +199,8 @@ li {
 
 .google-form {
   background: linear-gradient(125deg, #26d0c9 0%, #26d0a0 51%, #26d083 85%);
-  margin-top: 100px;
-  padding-top: 20px;
+  margin: 25px 0px;
+  padding-top: 30px;
 }
 
 .contact-form {
@@ -273,4 +275,67 @@ input, textarea {
 
 .footer-list li {
   padding-bottom: 20px;
+}
+
+
+.gist {
+  /* background-color: #26d0c9; */
+  background: linear-gradient(125deg, #26d0c9 0%, #26d0a0 51%, #26d083 85%);
+  text-align: center;
+  border-radius: 15px;
+  font-size: 20px;
+  padding-bottom: 10px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.people {
+  /* background-color: #26d0c9; */
+  background: linear-gradient(125deg, #26d0c9 0%, #26d0a0 51%, #26d083 85%);
+  text-align: center;
+  border-radius: 15px;
+}
+
+.name {
+  padding: 10px 0px;
+  border-bottom: 2px solid #dee7ec;
+}
+
+a:link {
+  color: white;
+  text-decoration: none;
+}
+
+.summary {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #dee7ec;
+  list-style-position: inside;
+}
+
+.description {
+  padding-left: 125px;
+  padding-right: 125px;
+  padding-bottom: 15px;
+}
+
+.sumlist {
+  list-style-position: inherit;
+}
+
+.gist-title {
+  font-size: 40px;
+  border-bottom: 2px solid #dee7ec;
+  padding: 10px 0px;
+}
+
+.gist-title span1 {
+  color: green;
+}
+
+.gist-title span2 {
+  color: lightgreen;
+}
+
+.gist-title span3 {
+  color: orange;
 }
