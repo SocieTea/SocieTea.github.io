@@ -61,6 +61,7 @@ li:not(.sumlist) {
   background: linear-gradient(125deg, #26d0c9 0%, #26d0a0 51%, #26d083 85%);
   text-align: center;
   border-radius: 15px;
+  height: 290px;
 }
 
 .copy-container h1 {
@@ -94,6 +95,7 @@ li:not(.sumlist) {
 .about p{
   font-size: 20px;
   margin-top: -15px;
+  padding-left: 10px;
 }
 
 .section-title span1 {
@@ -121,10 +123,12 @@ li:not(.sumlist) {
 
 .details h4 {
   font-size: 22px;
+  padding-left: 10px;
 }
 
 .details p {
   font-size: 20px;
+  padding-left: 10px;
 }
 
 .time {
@@ -139,15 +143,20 @@ li:not(.sumlist) {
 }
 
 .time li {
-  font-size: 20px;
+  font-size: 18px;
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+.time p {
+  font-size: 20px;
+  padding-left: 10px;
 }
 
 .contents {
   height: 400px;
   margin-top: 75px;
-  float: left;
+  /*float: left;*/
   /* white-space: nowrap; */
   /* background-color: #26d0c9; */
   background: linear-gradient(125deg, #26d0c9 0%, #26d0a0 51%, #26d083 85%);
@@ -155,6 +164,7 @@ li:not(.sumlist) {
   padding-bottom: 40px;
   border-radius: 15px;
   padding-left: 20px;
+  padding-top: 0.1px;
 }
 
 .section-title {
@@ -168,8 +178,8 @@ li:not(.sumlist) {
 
 .contents-item {
   float: left;
-  margin-left: 10px;
-  margin-right: 135px;
+  padding-left: 70px;
+  padding-right: 75px;
   /* display: inline-block;
   margin-right: 100px; */
 }
@@ -182,12 +192,25 @@ li:not(.sumlist) {
 .contents-item img {
   /* max-width: 200px; */
   height: 200px;
+  width: auto;
   /* overflow: hidden; */
   /* background-size: 20px */
   /* height: 20px
   width: 20px */
   /* max-width: 50%
   max-height: 50% */
+  /*align-items: center;*/
+  /*below will make one img middle
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;*/
+  transition:transform 0.25s ease;
+}
+
+.contents-item img:hover {
+    -webkit-transform:scale(2); /* or some other value */
+    transform:scale(2);
 }
 
 .calendar {
@@ -195,12 +218,18 @@ li:not(.sumlist) {
 }
 
 .calendar iframe {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  border-radius: 8px;
 }
 
 .google-form {
   background: linear-gradient(125deg, #26d0c9 0%, #26d0a0 51%, #26d083 85%);
   margin: 25px 0px;
   padding-top: 30px;
+  border-radius: 15px;
 }
 
 .contact-form {
@@ -235,14 +264,26 @@ input, textarea {
 }
 
 .footer-image {
-  background-image: url("SocieTeaLookUp.png");
-  background-size: contain;
-  width: 1318px;
-  height: 300px;
-  background-repeat: no-repeat;
+  /*background-image: url("SocieTeaLookUp.png");*/
+  /*background-size: contain;*/
+  /*width: 1318px;*/
+  /*width: inherit;*/
+  /*height: 300px;*/
+  /*height: auto;*/
+  /*background-repeat: no-repeat;*/
   margin-top: 75px;
   margin-bottom: 20px;
   /*border: 2px solid; */
+}
+
+.footer-image img {
+  /*height: auto;
+  width: 1318px;*/
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  border-radius: 15px;
 }
 
 .footer {
